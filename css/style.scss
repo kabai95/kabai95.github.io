@@ -124,7 +124,7 @@ body {
 	margin: 0px 20px 26px -10px;
 	label{
 		border-radius: 50%;
-		height: 30vh;
+		height: 200px;
 		cursor: pointer;
 		overflow: hidden;
 		content: url(/img/profil1.png);
@@ -134,7 +134,7 @@ body {
 	}
 	#profpicker:checked + label{
 		border-radius: 50%;
-		height: 30vh;
+		height: 200px;
 		cursor: pointer;
 		overflow: hidden;
 		content: url(/img/profil2.png);
