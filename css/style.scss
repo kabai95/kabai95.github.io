@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+$padding: 5px;
+$border: 15px;
+$desktop: 840px;
+$colors: (
+	bg-color:#000000,
+	font-color:#ffffff,
+	border-color:#ffffff,
+	shadow-color: #990000
+);
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+}
+@mixin desktop {
+	@media (min-width: #{$desktop}) {
+		@content;
+	}
+}
+.box-shadow {
+	box-shadow: 4px 4px 6px color(shadow-color);
+}
+body,
+html {
+	height: 100%;
+}
+body {
+	font-family: 'Lato';
+	margin: 10px;
+	background-color: color(bg-color);
+	p,
+	h1,
+	h2,
+	h3 {
+		color: color(font-color);
+	}
+}
+.banner {
+	border-left: 2px solid color(border-color);
+	border-bottom: 4px solid color(border-color);
+	border-right: 2px solid color(border-color);
+
+	margin: 15px 20px 20px 20px;
+	padding: $padding;
+	text-align: center;
+	h1 {
+		text-shadow: 2px 3px 3px color(shadow-color);
+	}
+	h2 {
+		font-size: 1.5rem;
+		text-shadow: 2px 3px 3px color(shadow-color);
+	}
+	a {
+		text-decoration: none;
+	}
+}
+.menu {
+	padding: $padding;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border: 4px solid color(border-color);
+	div {
+	}
+	a {
+		color: color(font-color);
+	}
+}
+.content {
+	margin: 10%;
+	p {
+		text-align: justify;
+	}
+	h1,
+	h2 {
+		text-align: center;
+		text-decoration: none;
+	}
+	.text-centered {
+		text-align: center;
+	}
+	ul {
+		width: 70%;
+		margin: auto;
+	}
+	li {
+		color: color(font-color);
+	}
+}
+.container {
+	margin-bottom: 40px;
+}
