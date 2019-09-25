@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/eb6ec4dad2.js"></script>
+
 </head>
 
 <body>
@@ -21,22 +21,11 @@
             <h2 class="banner-text">Frontend Developer</h2>
         </a>
     </div>
-    <div class="menu box-shadow">
-        <a href="#home">
-            <div class="first menus"><i class="fas fa-home fa-3x"></i></div>
-        </a>
-        <a href="#about-me">
-            <div class="second menus"><i class="fas fa-address-card fa-3x"></i></div>
-        </a>
-        <a href="#projects">
-            <div class="third menus"><i class="fas fa-file-word fa-3x"></i></div>
-        </a>
-        <a href="#gallery">
-            <div class="fourth menus"><i class="fas fa-images fa-3x"></i></div>
-        </a>
-        <a href="#contact">
-            <div class="fifth menus"><i class="fas fa-phone-square fa-3x"></i></div>
-        </a>
+    <div class="nav ">
+        <div class="home-btn box-shadow" ><a href="#home">Home</a></div>
+        <div class="about-btn box-shadow" ><a href="#about-me">About me</a></div>
+        <div class="projects-btn box-shadow" ><a href="#projects">Projects</a></div>
+        <div class="contact-btn box-shadow" ><a href="#contact">Contact</a></div>
     </div>
     <div class="content">
         <div id="home" class="container">
@@ -48,12 +37,12 @@
                 still have more questions, feel free to contact me.
             </p>
         </div>
-        <div id="about-me" class="container">
+        <div id="about-me" class="container"> 
             <h2>Who I am?</h2>
-            <div class="picture">
+            <div class="profpic">
                 <ul>
-                    <input type="checkbox" name="profil_switch" id="profpic" />
-                    <label for="profpic"></label>
+                    <input type="checkbox" name="profil_switch" id="profpicker" />
+                    <label for="profpicker"></label>
                 </ul>
             </div>
             <p>I am Norbert Kabai, but just call me Norbi. I'm a hungarian person, who lives in Serbia. I was born in
@@ -65,7 +54,7 @@
                 here because I want to be here. Because I enjoy designing and coding. Still, this is not everything I
                 do. A lot of my time is spent reading books (I'm a big fan of fantasy), going to the gym (got to keep
                 myself in shape after all), and doing a hundred more little things. </p>
-            <h2>What service do I offer?</h2>
+            <h2>What services do I offer?</h2>
             <p class="text-centered">What I offer you, is frontend developing, with the following skills:</p>
             <ul>
                 <li>HTML / CSS </li>
@@ -86,7 +75,7 @@
                 showing off works, that I didn't do fully myself. This Section will be updated when I can show off
                 enough sites created by myself alone-- </p>
         </div>
-        <div id="gallery" class="container">
+        <!-- <div id="gallery" class="container">
                 <h1>Image gallery</h1>
                 <div class="slider">
                     <input type="radio" name="slide_switch" id="id1" />
@@ -125,15 +114,12 @@
                     </label>
                     <img src="img/gallery7.jpg" />
                 </div>
-        </div>
+        </div> -->
         <div id="contact" class="container">
                 <h1>My contact info:</h1>
                 <ul>
                     <li>
                         <p> E-mail: norbikabai@gmail.com</p>
-                    </li>
-                    <li>
-                        <p> Viber: +381-62-16-30-871</p>
                     </li>
                     <li>
                         <p><a href="https://www.facebook.com/kabai95" target="_blank">Facebok</a></p>
@@ -143,10 +129,12 @@
                     </li>
                 </ul>
         </div>
-        <div class="footer" class="container">
-        <p>Site created by Norbert Kabai</p>
-        </div>
+
     </div>
+    <div class="footer" class="container">
+        <p>Site created by Norbert Kabai </p>
+        <p>All rights Reserved</p>
+        </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             crossorigin="anonymous"></script>

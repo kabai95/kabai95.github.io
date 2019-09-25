@@ -44,7 +44,7 @@ body h3 {
   text-decoration: none;
 }
 
-.menu {
+.nav {
   padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,10 +56,27 @@ body h3 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.nav div {
+  width: 20%;
+  text-align: center;
   border: 4px solid #ffffff;
 }
 
-.menu a {
+.nav div:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.nav div:hover a {
+  font-weight: 600;
+}
+
+.nav div a {
+  display: block;
+  padding: 10% 5%;
+  text-decoration: none;
   color: #ffffff;
 }
 
@@ -90,7 +107,58 @@ body h3 {
   color: #ffffff;
 }
 
+.content a {
+  color: #ffffff;
+}
+
 .container {
   margin-bottom: 40px;
+}
+
+.footer {
+  width: 80vw;
+  margin: auto;
+  padding: 2%;
+  border-left: 2px solid #ffffff;
+  border-top: 4px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-box-shadow: 4px -4px 6px #990000;
+          box-shadow: 4px -4px 6px #990000;
+  margin-bottom: 0;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.menu div:hover {
+  visibility: hidden;
+}
+
+.profpic {
+  display: block;
+  float: right;
+  shape-outside: circle();
+  margin: 0px 20px 26px -10px;
+}
+
+.profpic label {
+  border-radius: 50%;
+  height: 30vh;
+  cursor: pointer;
+  overflow: hidden;
+  content: url(/img/profil1.png);
+}
+
+.profpic #profpicker {
+  opacity: 0;
+}
+
+.profpic #profpicker:checked + label {
+  border-radius: 50%;
+  height: 30vh;
+  cursor: pointer;
+  overflow: hidden;
+  content: url(/img/profil2.png);
 }
 /*# sourceMappingURL=style.css.map */

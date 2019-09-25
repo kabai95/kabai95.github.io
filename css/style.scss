@@ -2,12 +2,7 @@
 $padding: 5px;
 $border: 15px;
 $desktop: 840px;
-$colors: (
-	bg-color:#000000,
-	font-color:#ffffff,
-	border-color:#ffffff,
-	shadow-color: #990000
-);
+$colors: (bg-color:#000000, font-color:#ffffff, border-color:#ffffff, shadow-color: #990000);
 @function color($color-name) {
 	@return map-get($colors, $color-name);
 }
@@ -38,7 +33,6 @@ body {
 	border-left: 2px solid color(border-color);
 	border-bottom: 4px solid color(border-color);
 	border-right: 2px solid color(border-color);
-
 	margin: 15px 20px 20px 20px;
 	padding: $padding;
 	text-align: center;
@@ -53,16 +47,27 @@ body {
 		text-decoration: none;
 	}
 }
-.menu {
+.nav {
 	padding: $padding;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	border: 4px solid color(border-color);
 	div {
-	}
-	a {
-		color: color(font-color);
+		&:hover{
+			transform: scale(1.2);
+			a{
+				font-weight: 600;
+			}
+		}
+		width: 20%;
+		text-align: center;
+		border: 4px solid color(border-color);
+		a {
+			display: block;
+			padding: 10% 5%;
+			text-decoration: none;
+			color: color(font-color);
+		}
 	}
 }
 .content {
@@ -85,7 +90,53 @@ body {
 	li {
 		color: color(font-color);
 	}
+	a {
+		color: color(font-color);
+	}
 }
 .container {
 	margin-bottom: 40px;
 }
+.footer {
+	width: 80vw;
+	margin: auto;
+	padding: 2%;
+	border-left: 2px solid color(border-color);
+	border-top: 4px solid color(border-color);
+	border-right: 2px solid color(border-color);
+	box-shadow: 4px -4px 6px color(shadow-color);
+	p {
+		text-align: center;
+	}
+	margin-bottom: 0;
+}
+.menu {
+	div {
+		&:hover {
+			visibility: hidden;
+		}
+	}
+}
+.profpic {
+	display: block;;
+	float: right;
+	shape-outside: circle();
+	margin: 0px 20px 26px -10px;
+	label{
+		border-radius: 50%;
+		height: 30vh;
+		cursor: pointer;
+		overflow: hidden;
+		content: url(/img/profil1.png);
+	}
+	#profpicker{
+		opacity: 0;
+	}
+	#profpicker:checked + label{
+		border-radius: 50%;
+		height: 30vh;
+		cursor: pointer;
+		overflow: hidden;
+		content: url(/img/profil2.png);
+	}
+	}
