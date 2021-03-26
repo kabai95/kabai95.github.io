@@ -161,4 +161,37 @@ body h3 {
   overflow: hidden;
   content: url(/img/profil2.png);
 }
+
+#projects {
+  margin: auto;
+  text-align: center;
+  height: 40vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+}
+
+#projects .project-tile {
+  background-color: white;
+  margin: 5px;
+  height: 100%;
+  -webkit-box-shadow: 4px -4px 6px #990000;
+          box-shadow: 4px -4px 6px #990000;
+  width: 2000px;
+}
+
+#projects .project-tile h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-tile iframe {
+  height: 100%;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */

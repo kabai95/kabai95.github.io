@@ -140,3 +140,29 @@ body {
 		content: url(/img/profil2.png);
 	}
 	}
+	#projects{
+		margin: auto;
+		text-align: center;
+		height: 40vh;
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		overflow: hidden;
+		
+		.project-tile{
+		background-color: white;
+		margin: 5px;
+		height: 100%;
+		box-shadow: 4px -4px 6px color(shadow-color);
+		width: 2000px;
+		h2{
+		a{
+			text-decoration: none;
+			color: black;
+		}}
+	}}
+	.project-tile iframe{
+		height: 100%;
+		width: 100%;
+		
+	}
